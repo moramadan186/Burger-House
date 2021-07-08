@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto:wght@500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 17px;
+    /* font-family: 'Montserrat', sans-serif; */
+    height: 3000px;
+}
+.pageContainer{width: 1377px;margin: 0 auto;}
+header{background-color: #FFBB3F;color: #3d2514;padding: 1.8rem 3rem 6rem;}
+header nav{}
+header nav .logoAndPhone{display: flex;justify-content: space-between;}
+header nav .logoAndPhone .logo{font-size: 2rem;}
+header nav .logoAndPhone .logo i{font-size: 3rem;}
+header nav .logoAndPhone .logo span{
+    margin-left: 15px;
+    font-size: 36px;
+    font-weight: 700;
+}
+header nav .phone{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 300px;
+    margin-bottom: 10px;
+}
+header nav .phone span{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-left: 10px;
+}
+header nav .toolbarLinks{
+    list-style-type: none;
+    display: flex;
+    font-size: 25px;
+    justify-content: flex-end;
+    font-weight: 400;
+    font-family: 'Bebas Neue',sans-serif;
+    margin-top: 10px;
+   
+}
+header nav .toolbarLinks li{ letter-spacing: 4px; margin-left: 50px;}
+header nav .toolbarLinks li a{text-decoration: none;color: #3d2514;}
+
+header .headerMain{display: flex;justify-content:space-between;margin-top: 3rem;}
+header .headerMain .brandText{flex-grow: 11;margin-top: 6rem;}
+header .headerMain .brandText .subTitle1{
+    font-size: 1.3rem;
+    padding: 10px;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%233D2514FF' stroke-width='5' stroke-dasharray='3%2c 10' stroke-dashoffset='3' stroke-linecap='square'/%3e%3c/svg%3e");    width: fit-content;
+    padding: 10px 15px;
+    font-weight: 300;
+}
+header .headerMain .brandText .title{
+    font-size: 6rem;
+    font-family: 'Alfa Slab One', cursive;
+    color: rgba(61, 37, 20, 255);
+    text-shadow: 4px 5px #fee7ba;
+    line-height:80px;
+    margin-top: 2rem;
+    letter-spacing: 0.3rem;
+}
+header .headerMain .brandText .title .subTitle2{ font-size: 4rem;}
+
+
+
+
+
+
+header .headerMain .burgerMeal{position: relative;flex-basis: 60%;min-height: 500px;}
+header .headerMain .burgerMeal img{}
+header .headerMain .burgerMeal img:nth-child(2){
+    z-index: 3;
+    position: absolute;
+    top: 124px;
+    right: 159px;
+}
+header .headerMain .burgerMeal img:nth-child(1){
+    position: absolute;
+    top: 60px;
+    right: 415px;
+}
+header .headerMain .burgerMeal img:nth-child(3){
+    position: absolute;
+    right: 85px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+header .headerMain .burgerMeal .pricing{
+    width: 180px;
+    height: 180px;
+    background-color: #bf2222;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    position: absolute;
+    bottom: -20px;
+    right: 545px;
+}
+header .headerMain .burgerMeal .pricing>div:first-child{
+    border-radius: 50%;
+    width: 85%;
+    height: 85%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='white' stroke-width='4' stroke-dasharray='4%2c 12' stroke-dashoffset='1' stroke-linecap='square'/%3e%3c/svg%3e");
+    border-radius: 100px;}
+header .headerMain .burgerMeal .pricing>div:first-child span:first-child{font-size: 4rem;word-spacing: -7px;}
+header .headerMain .burgerMeal .pricing>div:first-child span:first-child subb{font-size: 2rem;}
+header .headerMain .burgerMeal .pricing>div:first-child span:nth-child(2){letter-spacing: 4px; font-size: 2rem;margin-top: -12px;}
+
+
+/*implement todayOffer section */
+.todayOffer{margin-top: 4rem;}
+.todayOffer .offerRow{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    
+}
+.todayOffer .offerColumn:first-child { margin-right: 2.5rem;}
+.todayOffer .offerColumn:nth-child(2) .imgCont:first-child{margin-bottom: 2rem;}
+.todayOffer .offerColumn .imgCont {
+    overflow: hidden;
+    padding: 0;
+    border-radius: 8px;
+    position: relative;
+    color: white;
+}
+.todayOffer .offerColumn .imgCont >div{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-family: 'Bebas Neue',sans-serif;
+    
+}
+
+.todayOffer .offerColumn .imgCont img{
+    transition-duration: 0.5s;
+    display: block;
+}
+.todayOffer .offerColumn .imgCont  img:hover {
+    transform: scale(1.1);
+    z-index: 0;
+
+}
+.todayOffer .offerColumn .imgCont >div h4{font-size: 25px;font-weight: 400;}
+.todayOffer .offerColumn .imgCont >div h3{font-size: 40px;font-weight: 400;line-height: 36px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
