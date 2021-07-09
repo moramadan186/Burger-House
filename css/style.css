@@ -344,5 +344,6 @@ footer .footerText .info{
 }
 footer .footerText .info>div{display: flex;align-items: center;margin-bottom: 20px;}
 footer .footerText .info span{margin-left: 35px;}
-
-
+footer .footerBottom{display: flex; margin-top: 6rem;justify-content: space-between;}
+footer .footerBottom .footerLinks{padding-right: 2rem;font-family: Montserrat,sans-serif;}
+footer .footerBottom .footerLinks>img{padding: 3px;}
