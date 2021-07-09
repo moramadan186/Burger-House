@@ -158,7 +158,7 @@ header .headerMain .burgerMeal .pricing>div:first-child span:nth-child(2){letter
 .todayOffer{margin-top: 4rem;}
 .todayOffer .offerRow{display: flex;flex-wrap: wrap; justify-content:center;}
 .todayOffer .offerColumn:first-child { margin-right: 2.5rem;}
-.todayOffer .offerColumn:nth-child(2) .imgCont:first-child{margin-bottom: 2rem;}
+.todayOffer .offerColumn:nth-child(2) .imgCont:first-child{margin-bottom: 2.2rem;}
 .todayOffer .offerColumn .imgCont {
     overflow: hidden;
     padding: 0;
@@ -179,12 +179,132 @@ header .headerMain .burgerMeal .pricing>div:first-child span:nth-child(2){letter
 
 
 /**********implement menu section**************/
+.menu{text-align: center;margin-top: 5.5rem;color: #3d2514;}
+.menu .menuHeader{
+}
+.menu .menuHeader h5{
+    display: inline-block;
+    background-color: #FFC045;
+    width:fit-content;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 15px 20px 8px;
+    margin-bottom: 3.5rem;
+}
+.menu .menuHeader h2{
+    font-size: 3.1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Alfa Slab One',sans-serif;
+    margin-bottom: 2rem;
+    line-height: 28px;
+}
+.menu .menuHeader p{font-family: Montserrat,sans-serif;line-height:1.7;}
+.menu .menuElements{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
 
+}
+.menu .menuElements>div>div{position: relative;margin-bottom: 3rem;}
+.menu .menuElements>div>div::after{
+    content: " ";
+    position: absolute;
+    bottom: -25px;
+    left: 65px;
+    width: 65%;
+    height: 30px;
+    background-color: rgba(39, 39, 39, 0.589);
+    filter: blur(8px);
+    border-radius: 50%;
+    transform: rotateX(65deg);
+    
+}
+.menu .menuElements>div>div.burger1::after,.menu .menuElements>div>div.burger3::after{left: 85px;}
+.menu .menuElements>div>h3{font-size: 2.2rem;font-weight: 500;margin-bottom: .6rem;}
+.menu .menuElements>div>p{
+    font-family: Montserrat,sans-serif;
+    padding: 0 4rem;
+    margin-bottom: 1.7rem;
+}
+.menu .menuElements>div>button{
+    border: none;
+    background-color: #bf2222;
+    color: #ffffff;
+    padding: .9rem 1.7rem;
+    font-family: 'Alfa Slab One',sans-serif;
+    font-size: 1.0001rem;
+    text-transform: uppercase;
+}
 
+/*********implement events section**********/
+.events{
+    display: flex;
+    margin:6rem auto;
+    width: 85%;
+    padding:2rem;
+    box-shadow: 12px 15px 22px -3px rgba(0,0,0,0.24);
+ 
+}
+.events .eventsHeader{padding: 2rem;}
+.events .eventsHeader h5{
+    font-size: 1.7rem;
+    color: rgba(61, 61, 61, 255);
+    font-weight: 500;
+}
+.events .eventsHeader h2{
+    font-family: 'Alfa Slab One',sans-serif;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    color: rgba(61, 37, 20, 255);
+    margin: -8px 0 1rem 0;
+    font-weight: 500;
+}
+.events .eventsHeader p{
+    font-family: Montserrat,sans-serif;
+    color: rgba(61, 61, 61, 255);
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
 
+/**********implement booking section**********/
+.booking{display: flex;justify-content: space-between;min-height: 575px;}
+.booking .left{
+    position: relative;
+    flex-basis: 18%;}
+.booking .left>img{display: block;}
+.booking .left>img:first-child{
+    position: absolute;
+    top: -30px;
+    left: -20px;
+    filter:drop-shadow( 1px 0px 50px rgba(0,0,0,0.42));
+}
+.booking .left>img:nth-child(2){
+    position: absolute;
+    bottom: 170px;
+    right: 0;
+    filter:drop-shadow( 1px 0px 50px rgba(0,0,0,0.42));
+}
+.booking  .middle{padding: 2rem;flex-basis: 64%;}
+.booking  .middle .middleText{color: #3d2514;text-align: center;}
+.booking  .middle .middleText h5{font-weight: 500;font-size: 29px;}
+.booking  .middle .middleText h2{font-weight: 500;font-size: 3.2rem;   font-family: 'Alfa Slab One',sans-serif;margin-bottom: 3rem;}
 
+.booking  .middle form{text-align: end;}
+.booking  .middle form input{width: 45%;padding:1.3rem;margin:0.8rem ;}
 
+.booking .right{
+    position: relative;
+    flex-basis: 18%;
+    display: flex;
+    align-items: flex-end;
+   
+}
+.booking .right>img{
+    position: absolute;
+    bottom:0px;
+    right: -140px;
 
-
-
+}
 
