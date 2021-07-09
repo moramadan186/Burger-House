@@ -10,7 +10,8 @@ body{
     font-family: 'Bebas Neue', cursive;
     font-size: 17px;
     /* font-family: 'Montserrat', sans-serif; */
-    height: 3000px;
+    height: 6000px;
+    overflow-x:hidden;
 }
 .pageContainer{width: 1377px;margin: 0 auto;}
 header{background-color: #FFBB3F;color: #3d2514;padding: 1.8rem 3rem 6rem;}
@@ -205,7 +206,6 @@ header .headerMain .burgerMeal .pricing>div:first-child span:nth-child(2){letter
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
-
 }
 .menu .menuElements>div>div{position: relative;margin-bottom: 3rem;}
 .menu .menuElements>div>div::after{
@@ -219,7 +219,6 @@ header .headerMain .burgerMeal .pricing>div:first-child span:nth-child(2){letter
     filter: blur(8px);
     border-radius: 50%;
     transform: rotateX(65deg);
-    
 }
 .menu .menuElements>div>div.burger1::after,.menu .menuElements>div>div.burger3::after{left: 85px;}
 .menu .menuElements>div>h3{font-size: 2.2rem;font-weight: 500;margin-bottom: .6rem;}
@@ -245,7 +244,6 @@ header .headerMain .burgerMeal .pricing>div:first-child span:nth-child(2){letter
     width: 85%;
     padding:2rem;
     box-shadow: 12px 15px 22px -3px rgba(0,0,0,0.24);
- 
 }
 .events .eventsHeader{padding: 2rem;}
 .events .eventsHeader h5{
@@ -269,14 +267,14 @@ header .headerMain .burgerMeal .pricing>div:first-child span:nth-child(2){letter
 }
 
 /**********implement booking section**********/
-.booking{display: flex;justify-content: space-between;min-height: 575px;}
+.booking{display: flex;justify-content: space-between;min-height: 620px;}
 .booking .left{
     position: relative;
-    flex-basis: 18%;}
+    flex-basis: 15%;}
 .booking .left>img{display: block;}
 .booking .left>img:first-child{
     position: absolute;
-    top: -30px;
+    top: -50px;
     left: -20px;
     filter:drop-shadow( 1px 0px 50px rgba(0,0,0,0.42));
 }
@@ -288,23 +286,40 @@ header .headerMain .burgerMeal .pricing>div:first-child span:nth-child(2){letter
 }
 .booking  .middle{padding: 2rem;flex-basis: 64%;}
 .booking  .middle .middleText{color: #3d2514;text-align: center;}
-.booking  .middle .middleText h5{font-weight: 500;font-size: 29px;}
+.booking  .middle .middleText h5{font-weight: 500;font-size: 29px;letter-spacing: 2px;}
 .booking  .middle .middleText h2{font-weight: 500;font-size: 3.2rem;   font-family: 'Alfa Slab One',sans-serif;margin-bottom: 3rem;}
 
 .booking  .middle form{text-align: end;}
-.booking  .middle form input{width: 45%;padding:1.3rem;margin:0.8rem ;}
+.booking  .middle form input{
+    width: 45%;
+    padding:1.3rem;
+    margin:0.8rem ;
+    font-weight:500;
+    border: 1px solid rgb(173, 173, 173);
+    border-radius: 5px;
+    font-size: 17px;
+    font-family: 'Bebas Neue', cursive;
 
+}
+.booking  .middle form input[type="button"]{
+    background-color: #bf2222;
+    font-family: 'Alfa Slab One',sans-serif;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 255);
+    letter-spacing: 1px;
+}
+/* .booking  .middle form input::-webkit-input-placeholder{color: #3d2514;}
+.booking  .middle form input::-moz-placeholder{color: #3d2514;}
+.booking  .middle form input:-ms-input-placeholder {color: #3d2514;}
+.booking  .middle form input:-moz-placeholder{color: #3d2514;} */
 .booking .right{
     position: relative;
     flex-basis: 18%;
-    display: flex;
-    align-items: flex-end;
-   
 }
 .booking .right>img{
     position: absolute;
     bottom:0px;
     right: -140px;
-
+    filter:drop-shadow( 1px 0px 50px rgba(0,0,0,0.42));
 }
 
