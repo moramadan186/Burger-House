@@ -18,11 +18,7 @@ header nav{}
 header nav .logoAndPhone{display: flex;justify-content: space-between;}
 header nav .logoAndPhone .logo{font-size: 2rem;}
 header nav .logoAndPhone .logo i{font-size: 3rem;}
-header nav .logoAndPhone .logo span{
-    margin-left: 15px;
-    font-size: 36px;
-    font-weight: 700;
-}
+header nav .logoAndPhone .logo span{margin-left: 15px; font-size: 36px;font-weight: 700;}
 header nav .phone{
     display: flex;
     justify-content: center; 
@@ -49,6 +45,7 @@ header nav .toolbarLinks{
 header nav .toolbarLinks li{ letter-spacing: 4px; margin-left: 50px;}
 header nav .toolbarLinks li a{text-decoration: none;color: #3d2514;}
 
+/**********implement headet branText**********/
 header .headerMain{display: flex;justify-content:space-between;margin-top: 3rem;}
 header .headerMain .brandText{flex-grow: 11;margin-top: 6rem;}
 header .headerMain .brandText .subTitle1{
@@ -70,10 +67,7 @@ header .headerMain .brandText .title{
 header .headerMain .brandText .title .subTitle2{ font-size: 4rem;}
 
 
-
-
-
-
+/*************impelement header burferMeal**********/
 header .headerMain .burgerMeal{position: relative;flex-basis: 60%;min-height: 500px;}
 header .headerMain .burgerMeal img{}
 header .headerMain .burgerMeal img:nth-child(2){
@@ -81,29 +75,55 @@ header .headerMain .burgerMeal img:nth-child(2){
     position: absolute;
     top: 124px;
     right: 159px;
+    /* filter: drop-shadow( 0px -180px 80px rgba(255, 255, 255, 0.541)); */
+    /* filter: drop-shadow( 0px 3px 9px rgba(0,0,0,0.75)); */
 }
 header .headerMain .burgerMeal img:nth-child(1){
     position: absolute;
     top: 60px;
     right: 415px;
+    z-index: 2;
 }
 header .headerMain .burgerMeal img:nth-child(3){
     position: absolute;
     right: 85px;
+    filter: contrast(200%);
+    z-index: 1;
+    /* filter: drop-shadow( 0px 3px 9px rgba(0,0,0,0.75)); */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
+header .shadow1{
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.158);
+    position: absolute;
+    right: 308px;
+    top: 132px;
+    border-radius: 50%;
+    box-shadow: 0px -60px 145px 75px rgb(255 255 255 / 78%);
+    z-index: 0;
+}
+header .shadow2{
+    width: 280px;
+    height: 20px;
+    background-color: rgb(0 0 0 / 80%);
+    position: absolute;
+    right: 235px;
+    bottom: -20px;
+    border-radius: 50%;
+    filter: blur(11px);
+    z-index: 0;
+}
+header .shadow3{
+    width: 106px;
+    height: 15px;
+    background-color: rgb(0 0 0 / 80%);
+    position: absolute;
+    right: 96px;
+    bottom: -10px;
+    border-radius: 45%;
+    filter: blur(9px);
+    z-index: 0;
+}
 header .headerMain .burgerMeal .pricing{
     width: 180px;
     height: 180px;
@@ -134,14 +154,9 @@ header .headerMain .burgerMeal .pricing>div:first-child span:first-child subb{fo
 header .headerMain .burgerMeal .pricing>div:first-child span:nth-child(2){letter-spacing: 4px; font-size: 2rem;margin-top: -12px;}
 
 
-/*implement todayOffer section */
+/**********implement todayOffer section*************/
 .todayOffer{margin-top: 4rem;}
-.todayOffer .offerRow{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
-    
-}
+.todayOffer .offerRow{display: flex;flex-wrap: wrap; justify-content:center;}
 .todayOffer .offerColumn:first-child { margin-right: 2.5rem;}
 .todayOffer .offerColumn:nth-child(2) .imgCont:first-child{margin-bottom: 2rem;}
 .todayOffer .offerColumn .imgCont {
@@ -156,24 +171,14 @@ header .headerMain .burgerMeal .pricing>div:first-child span:nth-child(2){letter
     top: 30px;
     left: 30px;
     font-family: 'Bebas Neue',sans-serif;
-    
 }
-
-.todayOffer .offerColumn .imgCont img{
-    transition-duration: 0.5s;
-    display: block;
-}
-.todayOffer .offerColumn .imgCont  img:hover {
-    transform: scale(1.1);
-    z-index: 0;
-
-}
+.todayOffer .offerColumn .imgCont img{transition-duration: 0.5s;display: block;}
+.todayOffer .offerColumn .imgCont  img:hover {transform: scale(1.1);z-index: 0;}
 .todayOffer .offerColumn .imgCont >div h4{font-size: 25px;font-weight: 400;}
 .todayOffer .offerColumn .imgCont >div h3{font-size: 40px;font-weight: 400;line-height: 36px;}
 
 
-
-
+/**********implement menu section**************/
 
 
 
