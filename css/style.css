@@ -35,7 +35,7 @@ header nav .phone span{
 header nav .toolbarLinks{
     list-style-type: none;
     display: flex;
-    font-size: 25px;
+    font-size:1.4vw;
     justify-content: flex-end;
     font-weight: 400;
     font-family: 'Bebas Neue',sans-serif;
@@ -62,7 +62,7 @@ header .headerMain .brandText .title{
     font-family: 'Alfa Slab One', cursive;
     color: rgba(61, 37, 20, 255);
     text-shadow: 4px 5px #fee7ba;
-    line-height:80px;
+    line-height: 0.89;
     margin-top: 2rem;
     letter-spacing: 0.3rem;
 }
@@ -118,7 +118,7 @@ header .shadow1{
     /* right: 308px; */
     right: 36%;
     /* top: 132px; */
-    bottom: 55%;
+    bottom: 40%;
     border-radius: 50%;
     box-shadow: 0px -60px 145px 75px rgb(255 255 255 / 78%);
     z-index: 0;
@@ -152,8 +152,8 @@ header .shadow3{
     z-index: 0;
 }
 header .headerMain .burgerMeal .pricing{
-    width: 180px;
-    height: 180px;
+    width: 170px;
+    height: 170px;
     background-color: #bf2222;
     color: white;
     border-radius: 50%;
@@ -179,9 +179,9 @@ header .headerMain .burgerMeal .pricing>div:first-child{
     flex-direction: column; 
     background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='white' stroke-width='4' stroke-dasharray='4%2c 12' stroke-dashoffset='1' stroke-linecap='square'/%3e%3c/svg%3e");
     border-radius: 100px;}
-header .headerMain .burgerMeal .pricing>div:first-child span:first-child{font-size: 4rem;word-spacing: -7px;}
-header .headerMain .burgerMeal .pricing>div:first-child span:first-child subb{font-size: 2rem;}
-header .headerMain .burgerMeal .pricing>div:first-child span:nth-child(2){letter-spacing: 4px; font-size: 2rem;margin-top: -12px;}
+header .headerMain .burgerMeal .pricing>div:first-child span:first-child{font-size: 4vw;word-spacing: -7px;}
+header .headerMain .burgerMeal .pricing>div:first-child span:first-child subb{font-size: 2vw;}
+header .headerMain .burgerMeal .pricing>div:first-child span:nth-child(2){letter-spacing: 4px; font-size: 2vw;margin-top: -12px;}
 
 
 /**********implement todayOffer section*************/
@@ -195,6 +195,7 @@ header .headerMain .burgerMeal .pricing>div:first-child span:nth-child(2){letter
     border-radius: 8px;
     position: relative;
     color: white;
+    cursor: pointer;
 }
 .todayOffer .offerColumn .imgCont >div{
     position: absolute;
@@ -263,6 +264,7 @@ header .headerMain .burgerMeal .pricing>div:first-child span:nth-child(2){letter
     font-family: 'Alfa Slab One',sans-serif;
     font-size: 1.0001rem;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 /*********implement events section**********/
@@ -334,6 +336,7 @@ header .headerMain .burgerMeal .pricing>div:first-child span:nth-child(2){letter
     font-size: 1.2rem;
     color: rgba(255, 255, 255, 255);
     letter-spacing: 1px;
+    cursor: pointer;
 }
 /* .booking  .middle form input::-webkit-input-placeholder{color: #3d2514;}
 .booking  .middle form input::-moz-placeholder{color: #3d2514;}
@@ -355,7 +358,7 @@ footer{
     width: 90%;
     margin: 2rem auto;
     height: 500px;
-    background-image: url('/images/footerImage.png');
+    background-image: url('../images/footerImage.png');
     padding: 4rem 0rem 1rem 3rem;
     color: white;
     background-size: cover;
@@ -373,40 +376,22 @@ footer .footerBottom .footerLinks{padding-right: 2rem;font-family: Montserrat,sa
 footer .footerBottom .footerLinks>img{padding: 3px;}
 
 @media screen and (min-width:400px) and (max-width:1200px) {
+    header nav .toolbarLinks{font-size:1.7vw;}
+    header .headerMain .burgerMeal{position: relative;flex-basis: 60%;}
+    header .headerMain .burgerMeal img:nth-child(1){bottom:16%;}
+    header .headerMain .burgerMeal img:nth-child(2){bottom: -10%;}
+    header .headerMain .burgerMeal img:nth-child(3){bottom: -8%;}
+    header .shadow1{bottom: 35%;}
+    header .shadow2{bottom:-17%;}
+    header .shadow3{bottom:-15%;}
+    header .headerMain .burgerMeal .pricing{
+        width: 128px;
+        height: 128px;
+        bottom: -15%;
+    }
+    header .headerMain .brandText .title{margin-top: 1.5rem;}
+    header .headerMain .brandText .subTitle1 {font-size: 1.7vw;}
     
-header .headerMain .burgerMeal{position: relative;flex-basis: 60%;
-}
-header .headerMain .burgerMeal img{}
-header .headerMain .burgerMeal img:nth-child(1){
-    bottom:16%;
-    right: ;
-}
-header .headerMain .burgerMeal img:nth-child(2){
-    bottom: -10%;
-    right: ;
-}
-header .headerMain .burgerMeal img:nth-child(3){
-    bottom: -8%;
-    right: ;
-}
-header .shadow1{
-    bottom: 48%;
-    right: ;
-}
-header .shadow2{
-    bottom:-7%;
-    right: ;
-}
-header .shadow3{
-    bottom:-1%;
-    right: ;
-}
-header .headerMain .burgerMeal .pricing{
-    width: 145px;
-    height: 145px;
-    bottom: -15%;
-}
-header .headerMain .brandText .subTitle1 {font-size: 1.7vw;}
 }
 
 
