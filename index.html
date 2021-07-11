@@ -20,14 +20,23 @@
                 <div class="phone">
                     <img src="images/delivery.png" alt="">
                     <span>Express Delivery +1 234 567 890</span>
+                    <span id="openSpan" style="font-size:1.7rem;cursor:pointer" onclick="openNav()">&#9776;</span>
                 </div>
+               
             </div>
-            <ul class="toolbarLinks">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Our Story</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
+            <div class="sideMenu">
+                <div class="logo">
+                    <div><i class="fas fa-hamburger"></i><span>BURGER HOUSE</span></div>
+                    <div class="closebtn"><a href="javascript:void(0)"  onclick="closeNav()">&times;</a></div>
+                </div>
+                <ul class="toolbarLinks">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+
+            </div>
         </nav>
         <div class="headerMain">
             <div class="brandText">
@@ -184,6 +193,10 @@
             </div>
         </div>
     </footer>
+    <script>
+        function openNav() {document.querySelectorAll(".sideMenu")[0].style.width = "100%";}
+		function closeNav() {document.querySelectorAll(".sideMenu")[0].style.width  = "0%";}
+    </script>
 </body>
 
 </html>
